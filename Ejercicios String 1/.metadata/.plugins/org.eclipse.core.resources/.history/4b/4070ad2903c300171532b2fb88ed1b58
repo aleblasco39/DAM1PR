@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Ejercicio2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("Introduzca un texto de no más de 80 carácteres");
+		String texto=teclado.nextLine();
+		int comodin=0;
+		int contadormayus = 0;
+		int conatadorminus = 0;
+		String mayusculas; 
+		while (comodin<1) {
+			if (texto.length()>80) {
+				System.err.println("Solo se pueden meter frases de menos de 80 carácteres");
+				String texto2=teclado.nextLine();
+				texto=texto2;
+			} else {
+				comodin=1;
+			}
+		for (int i = 0; i < texto.length(); i++) {
+				if("QWERTYUIOPASDFGHJKLÑZXCVBNMÁÉÍÓÚ".indexOf(texto.substring(i, i+1)) !=-1 );{
+					contadormayus++;
+				}
+				if ("qwertyuiopasdfghjklñzxcvbnmáéíóú".indexOf(texto.substring(i, i+1)) !=-1) {
+					conatadorminus++;
+				}
+			}
+		}
+		System.out.println("En el texto hay un total de "+contadormayus+" letras mayúsculas y "+conatadorminus+" letras minúsculas");
+		teclado.close();	
+	}
+}

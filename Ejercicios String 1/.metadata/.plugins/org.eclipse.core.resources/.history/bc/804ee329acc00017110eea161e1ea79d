@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ejercicio1 { //Queremos que imprima una frase que introducimos por teclado pero que a cada impresión sea un caracter de la frase y por cada impresión sea un salto de línea
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado= new Scanner(System.in);
+		int contador=0;
+		int posicion=0;
+		String mitexto=teclado.nextLine();
+		while (contador<mitexto.length()) {
+			mitexto.charAt(posicion);
+			System.out.println(mitexto);
+			posicion++;
+			contador++;
+		}
+		teclado.close();
+		}
+
+}
