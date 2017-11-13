@@ -18,9 +18,19 @@ public class Ejercicio1 { //Queremos que imprima una frase que introducimos por 
 		Scanner teclado = new Scanner(System.in);
 		int contador = 0;
 		String posicion;
-		String mitexto = teclado.nextLine();
-		while (contador < mitexto.length()) {
-			posicion =  mitexto.substring(contador, mitexto.length());
+		String frase = teclado.nextLine();
+		int comodin=0;
+		while (comodin<1) {
+			if (frase.length()>80) {
+				System.err.println("Por favor, solo se admiten frases de 80 carácteres");
+				String frase2=teclado.nextLine();
+				frase=frase2;
+			} else {
+				comodin=1;
+			}
+		}
+		while (contador < frase.length()) {
+			posicion =  frase.substring(contador, frase.length());
 			System.out.println(posicion);
 			contador++;
 		}
