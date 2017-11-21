@@ -17,7 +17,7 @@ public class Ejercicio8 {
 			corrido=corrido2;
 		}
 		String mitexto2;
-		mitexto=mitexto.toUpperCase();
+		mitexto.toUpperCase();
 		mitexto2=mitexto;
 		for (int i = 0; i < mitexto.length(); i++) {
 			int posicion=letras.indexOf(mitexto.substring(i, i+1));

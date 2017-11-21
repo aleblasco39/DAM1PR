@@ -6,7 +6,7 @@ public class Ejercicio8 {
 		// TODO Auto-generated method stub
 		Scanner teclado=new Scanner(System.in);
 		String letras="ABCDEFGHIJKLMNÑOPQRSTUWXYZABCDEFGHIJ";
-		String codificado="";
+		String codificado;
 		System.out.println("Introduzca una frase");
 		String mitexto=teclado.nextLine();
 		System.out.println("Introduzca los espacios de corrido");
@@ -17,14 +17,14 @@ public class Ejercicio8 {
 			corrido=corrido2;
 		}
 		String mitexto2;
-		mitexto=mitexto.toUpperCase();
 		mitexto2=mitexto;
+		mitexto.toUpperCase();
+		mitexto2.toUpperCase();
 		for (int i = 0; i < mitexto.length(); i++) {
 			int posicion=letras.indexOf(mitexto.substring(i, i+1));
 				codificado=codificado.concat(letras.substring(posicion+corrido,posicion+corrido+1));
-
+			
 		}
-		System.out.println(codificado);
 		System.out.println("¿Desea descodificarlo?");
 		System.out.println("Introduzca 1 para Si");
 		System.out.println("Introduzca 2 para No");;
