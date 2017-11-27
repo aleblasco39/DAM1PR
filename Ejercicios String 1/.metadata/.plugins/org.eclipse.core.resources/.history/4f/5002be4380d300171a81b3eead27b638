@@ -1,13 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicio9 { // Escribir un programa que lea códigos de personas de 8 caracteres de modo que los cuatro
-	// primeros sean numéricos y contenidos entre 1990-1995 (un año), el quinto carácter sea solo
-	// (H ó M) sexo, el sexto un numero que representa el curso 1 ó 2 y los caracteres séptimo y
-	// octavo pueden tener cualquier valor.Ddeben rechazarse los códigos que no cumplan estas
-	// condiciones, la finalización de entrada de códigos se produce cuando se introduce el código
-	// “00000000”. Al final el programa debe sacar un informe indicando cuántos hombres y
-	// mujeres hay matriculados en primero y segundo y cuántos códigos correctos han sido
-	// leídos.
+public class Ejercicio9 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -60,7 +53,7 @@ public class Ejercicio9 { // Escribir un programa que lea códigos de personas de
 			if (("F2".equals(codigo.substring(4, 6)) == true)) {
 				mujeres2++;
 			}
-			contcodi++;
+
 			System.out.println("¿Desea acabar el programa?");
 			System.out.println("Si - teclee 00000000");
 			System.out.println("No - teclee cualquier otra cosa");
@@ -68,17 +61,14 @@ public class Ejercicio9 { // Escribir un programa que lea códigos de personas de
 			if (fin == 00000000) {
 				System.out.println("El número de hombres es de "+hombres1+" en el primer curso y de "+hombres2+" en el segundo curso");
 				System.out.println("El número de mujeres es de "+mujeres1+" en el primer curso y de "+mujeres2+" en el segundo curso");
-				System.out.println("El número de códigos correctos leídos ha sido de "+contcodi);
 				System.out.println("Fin");
 				contador=6;
-				
 			}
 			contador++;
 		}
 		if (contador==6) {
 			System.out.println("El número de hombres es de "+hombres1+" en el primer curso y de "+hombres2+" en el segundo curso");
 			System.out.println("El número de mujeres es de "+mujeres1+" en el primer curso y de "+mujeres2+" en el segundo curso");
-		    System.out.println("El número de códigos correctos leídos ha sido de "+contcodi);
 			System.out.println("Fin");
 		}
 		teclado.close();

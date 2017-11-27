@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Ejercicio4 {
 
-	public static void main(String[] args) { // Leer una cadena de hasta 80 caracteres y pasarla en función de una variable de opción a
-		// mayúsculas ó a minúsculas e imprimir la cadena resultante
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner teclado= new Scanner(System.in);
 		System.out.println("Introduzca una frase de menos de 80 carácteres");
