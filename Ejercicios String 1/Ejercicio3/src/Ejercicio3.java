@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class Ejercicio3 {
+public class Ejercicio3 { // Programa que lea una frase y una palabra y que nos diga la posición de dicha palabra en la
+	// frase y si no la encuentra devuelva un cero.
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

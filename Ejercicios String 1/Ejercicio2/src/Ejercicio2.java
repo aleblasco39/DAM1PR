@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class Ejercicio2 {
+public class Ejercicio2 { // Dada una frase de no más de 80 caracteres hacer un programa que busque cuántas
+	// mayúsculas y minúsculas tiene y lo imprima
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

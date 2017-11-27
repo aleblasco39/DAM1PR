@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class Ejercicio7 {
+public class Ejercicio7 { // Leer una frase por teclado y escribir a continuación cuantas mayúsculas, minúsculas y
+	//números contiene.
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

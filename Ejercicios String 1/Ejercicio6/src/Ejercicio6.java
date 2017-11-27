@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class Ejercicio6 {
+public class Ejercicio6 { // Leer una frase por teclado (máximo 80) y a continuación escribir cuantas vocales,
+	// consonantes y caracteres numéricos posee.
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
