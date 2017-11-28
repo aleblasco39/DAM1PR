@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Ejercicio3 {// Escribe un programa que pida por teclado una palabra y diga si es un palíndromo
+	// o no. Una palabra es un palíndromo si se lee igual de izquierda a derecha que de
+	// derecha a izquierda.
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("Inserte una frase");
+		String frase=teclado.nextLine();
+		String comodin=" ";
+		for (int i = frase.length(); i < 0; i--) {
+		 comodin=comodin.concat(frase.substring(i-1, i));
+		}
+		System.out.println(comodin);
+		teclado.close();
+	}
+}
