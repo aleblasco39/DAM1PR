@@ -30,5 +30,6 @@ public class Ejercicio27 {
 			System.out.println(numero+" * "+ contador+" = "+a);	
 			contador++;	
 		}	
+		teclado.close();
 	}
 }

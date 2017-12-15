@@ -39,6 +39,7 @@ public class Ejercicio15 {
 			contador++;
 			menor++;
 		}
+		teclado.close();
 		System.out.println("Hay"+" "+contador+" "+"entre el primer y el segundo númeo");
 		System.out.println("La suma de los números impares será de"+" "+sumaimpares);
 		System.out.println("Hay"+" "+pares+" "+"entre el primer y segundo número1");

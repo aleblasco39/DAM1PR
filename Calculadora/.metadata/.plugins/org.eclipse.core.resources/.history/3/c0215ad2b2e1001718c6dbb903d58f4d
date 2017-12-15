@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ejercicio11 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		int numero=teclado.nextInt();
+		int contador=1;
+		int multiplos=0;
+		while (numero<=0) {
+			System.out.println("Por favor, introduzca otro número");
+		}
+		while (numero>0) {
+			while (contador<=numero) {
+				if (contador%3==0) {
+					System.out.println(contador);
+					multiplos++;
+				}
+				contador++;
+			}System.out.println("El numero tiene "+multiplos+" multiplos");
+		}
+		
+		teclado.close();
+	}
+}

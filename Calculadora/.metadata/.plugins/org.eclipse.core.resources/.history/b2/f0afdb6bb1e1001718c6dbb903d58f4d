@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ejercicio24 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("Meta un numero por favor");
+		int numero=teclado.nextInt();
+		int contador=0;
+		numero=comprobacionmayorqueuno(numero);
+		contador=comprobacionprimos(contador);
+		if (contador==0) {
+			System.out.println("El "+numero+" es un numero primo");
+		}
+		else {
+			System.err.println("El "+numero+" no es un numero primo");
+		}
+	}
+	public static int comprobacionmayorqueuno(int numero){
+		int numeromayorqueuno=0;
+		int comodin=0;
+		Scanner teclado= new Scanner(System.in);
+		while (comodin<1) {
+			if (numero<=1) {
+				System.out.println("Introduzca un numero mayor que 1, por favor");
+				int numero2=0;
+				numero2=teclado.nextInt();
+				numero=numero2;
+			}
+			else {
+				comodin=1;
+			}
+		}
+		teclado.close();
+		numeromayorqueuno=numero;
+	return numeromayorqueuno;
+	}
+	public static int comprobacionprimos(int numero){
+		int a=2; int contador=0;
+		while (a<(int)Math.sqrt(numero)+1) {
+			if (numero%2==0) {
+				contador++;
+			}
+			a++;	
+		}
+		
+	return contador ;
+	}
+
+}

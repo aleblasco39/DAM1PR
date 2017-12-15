@@ -22,6 +22,6 @@ public class Ejercicio10 {
 		else {
 			System.out.println("El número"+" "+entero+" "+"es impar");
 		}	
+		teclado.close();
 	}
-
 }

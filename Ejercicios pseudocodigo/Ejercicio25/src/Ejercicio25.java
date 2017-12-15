@@ -7,7 +7,8 @@ public class Ejercicio25 {
 		Scanner teclado= new Scanner(System.in);
 		System.out.println("Introduce un numero por debajo de 5000");
 		int numero=teclado.nextInt(); //número que introducimos por teclado y que va a servir para traducirlo a numeros romanos
-		int sw=0;//variable que va a servir para usar el Switch
+		int sw;//variable que va a servir para usar el Switch
+		
 		while ((numero<0) || (numero>=5000)) {
 			System.out.println("Introduce un numero por debajo de 5000");
 			int numero2=teclado.nextInt();
@@ -52,10 +53,10 @@ public class Ejercicio25 {
 				System.out.print("DCC");
 				break;
 			case 8:
-				System.out.println("DCCC");
+				System.out.print("DCCC");
 				break;
 			case 9:
-				System.out.println("CM");
+				System.out.print("CM");
 				break;
 			}
 			numero=numero%100;
@@ -82,10 +83,10 @@ public class Ejercicio25 {
 				System.out.print("LXX");
 				break;
 			case 8:
-				System.out.println("LXXX");
+				System.out.print("LXXX");
 				break;
 			case 9:
-				System.out.println("XC");
+				System.out.print("XC");
 				break;
 			}
 			numero=numero%10;
@@ -112,10 +113,10 @@ public class Ejercicio25 {
 				System.out.print("VII");
 				break;
 			case 8:
-				System.out.println("VIII");
+				System.out.print("VIII");
 				break;
 			case 9:
-				System.out.println("IX");
+				System.out.print("IX");
 				break;
 			}
 			teclado.close();

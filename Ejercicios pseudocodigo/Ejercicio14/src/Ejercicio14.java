@@ -30,6 +30,7 @@ public class Ejercicio14 {
 			}
 			contador++;
 		}
+		teclado.close();
 		System.out.println("El número más grande será"+" "+mayor);
 		System.out.println("El número más pequeño será"+" "+menor);
 	}

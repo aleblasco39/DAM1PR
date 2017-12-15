@@ -1,4 +1,4 @@
-import java.util.Random;
+
 
 /**
  * 
@@ -26,6 +26,7 @@ public class Ejercicio28 {
 				System.out.println("Ha salido cruz "+tirada);
 			}
 		}
+
 	}
 
 }

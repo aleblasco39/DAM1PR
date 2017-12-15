@@ -29,5 +29,6 @@ public class Ejercicio23 {
 			}
 			contador++;
 		}
+		teclado.close();
 	}
 }

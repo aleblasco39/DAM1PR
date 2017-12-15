@@ -19,7 +19,7 @@ public class Ejercicio1 {
 		}
 		media=media/20;
 		System.out.println("Esta es la media "+media);
-		System.out.println("------------------------------------------------------------------------");
+		System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------------------");
 		System.out.println("Numeros que son superiores, inferiores e iguales:");
 		for (int i = 0; i < lista.length; i++) {
 			if (lista[i]>media) {

@@ -22,7 +22,7 @@ public class Ejercicio6 {
 			System.out.println(contador);
 			contador++;
 		}
-
+		teclado.close();
 	}
 
 }
