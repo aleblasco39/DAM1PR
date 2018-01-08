@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;public static void serie10()&apos; from &apos;Ejercicio16.main()&apos; to &apos;Ejercicio16&apos;&#x0D;&#x0A;- Original project: &apos;Ejercicio16&apos;&#x0D;&#x0A;- Method name: &apos;serie10&apos;&#x0D;&#x0A;- Destination type: &apos;Ejercicio16&apos;&#x0D;&#x0A;- Declared visibility: &apos;public&apos;" comments="false" description="Extract method &apos;serie10&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;{Ejercicio16.java" name="serie10" replace="false" selection="193 233" stamp="1513693629998" version="1.0" visibility="1"/>
+</session>

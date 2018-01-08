@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Reloj {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado= new Scanner(System.in);
+		int seg, min, hor;
+		System.out.println("Dame la hora ");
+		hor = teclado.nextInt();
+		System.out.println("Dame los minutos");
+		min = teclado.nextInt();
+		System.out.println("Dame los segundos");
+		seg = teclado.nextInt();
+		Hora mihora=new Hora(hor, min, seg);
+		System.out.println(mihora);
+		System.out.println(mihora.getHora()+":"+mihora.getMinuto()+":"+mihora.getSegundo());
+		System.out.println(" "+mihora.toString());
+		}
+
+}

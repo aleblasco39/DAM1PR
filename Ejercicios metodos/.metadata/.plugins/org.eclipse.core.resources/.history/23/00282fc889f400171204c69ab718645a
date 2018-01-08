@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class TragaBolas {
+	int comodin;
+	
+	
+	public static void tragaBolas(String color, int maxBolas){
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Eliga color entre azul, rojo, amarillo y verde");
+		color = teclado.nextLine();
+		int comodin=0;
+		color=color.toLowerCase();
+
+		while (comodin<1) {
+			if (!color.equals("azul") || !color.equals("rojo") || !color.equals("amarillo") || !color.equals("verde")){
+				System.err.println("Solo se puede azul, rojo, amarillo y verde");
+				String color2 = teclado.nextLine();
+				color2 = color2.toLowerCase();
+				color=color2;
+			
+			} else{
+				comodin=2;
+		}
+		}
+		
+		System.out.println("Elija el número de bolas que puede comer");
+		maxBolas = teclado.nextInt();
+	}
+	public static void visualizar(int maxBolas, int bolasComidas, String color){
+		System.out.println("El color del tragabolas es "+color);
+		System.out.println("Bolas:"+bolasComidas+"/"+maxBolas);
+	}
+
+
+
+}

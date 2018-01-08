@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+
+/**
+ * @author usuario
+ *
+ */
+public class Ejercicio16 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int serie=1;
+		int contador=1;
+		while (serie<=10) {
+			while (contador<=10) {
+				System.out.print(contador+"\t");
+				contador++;
+			}
+			contador=1;
+			System.out.println(" ");
+			System.out.println(" ");
+			serie++;
+		}
+				
+	}
+
+	
+}

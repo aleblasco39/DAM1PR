@@ -1,0 +1,45 @@
+
+public class Hora {
+	 private int hora;
+	 private int minuto;
+	 private int segundo;
+	
+	 public Hora(int hora2, int minuto2, int segundo2) {
+		// TODO Auto-generated constructor stub
+	}
+	public int getHora() {
+		return hora;
+	}
+	public void setHora(int hora) {
+		if ((hora>=0) && (hora<59)) {
+			this.hora = hora;
+		}
+		else {
+			System.out.println("Valor erróneo");
+		}
+		
+	}
+	public int getMinuto() {
+		return minuto;
+	}
+	public void setMinuto(int minuto) {
+		if ((minuto>=0) && (minuto<59)) {
+			this.minuto = minuto;
+		}
+		else {
+			System.out.println("Valor erróneo");
+		}
+		
+	}
+	public int getSegundo() {
+		return segundo;
+	}
+	public void setSegundo(int segundo) {
+		if ((segundo>=0) && (segundo<59)) {
+			this.segundo = segundo;
+		}
+		else {
+			System.out.println("Valor erróneo");
+		}
+	}
+}

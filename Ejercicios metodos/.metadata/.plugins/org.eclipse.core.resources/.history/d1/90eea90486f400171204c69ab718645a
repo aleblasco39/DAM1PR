@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class TragaBolas {
+	public int maxBolas;
+	public String color;
+	public int bolasComidas;
+	int comodin;
+	
+	public static void tragaBolas(String color, int maxBolas){
+	
+	Scanner teclado = new Scanner(System.in);
+	color = teclado.nextLine();
+	String espa = teclado.nextLine();
+	maxBolas = teclado.nextInt();
+	int comodin=0;
+	color=color.toLowerCase();
+	
+	if ((( color.equals("azul") == false) || ( color.equals("rojo") == false) || ( color.equals("amarillo") == false) || ( color.equals("verde") == false))){
+			String color2 = teclado.nextLine();
+			color=color2;
+		
+	
+	}
+	
+	
+	
+	
+	}
+	
+	
+	
+}

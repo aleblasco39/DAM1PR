@@ -1,0 +1,10 @@
+
+public class TragaBolasData {
+	public int maxBolas;
+	public String color;
+	public int bolasComidas;
+	public int comodin;
+
+	public TragaBolasData() {
+	}
+}
